@@ -4,6 +4,7 @@ import '../models/employee.dart';
 
 class EmployeeController extends GetxController {
   var employeeList = <Employee>[].obs;
+  //var employee = <Employee>[].obs;
 
   final _uuid = Uuid();
 
@@ -41,6 +42,8 @@ class EmployeeController extends GetxController {
     int index = employeeList.indexWhere((e) => e.id == updated.id);
     if (index != -1) {
       employeeList[index] = updated;
+      employeeList.refresh();
+      
     }
   }
 
