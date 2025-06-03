@@ -1,4 +1,3 @@
-
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gxt/views/employee_list_view.dart';
@@ -10,7 +9,6 @@ void main() {
     home: HomeView(),
   ));
 }
-
 
 class HomeView extends StatefulWidget {
   @override
@@ -29,7 +27,8 @@ class _HomeViewState extends State<HomeView> {
         currentIndex: _currentIndex,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.people), label: 'พนักงาน'),
-          BottomNavigationBarItem(icon: Icon(Icons.business), label: 'Outsource'),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.business), label: 'Outsource'),
         ],
         onTap: (index) => setState(() => _currentIndex = index),
       ),

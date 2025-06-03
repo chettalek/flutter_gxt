@@ -23,7 +23,6 @@ class OutsourceListView extends StatelessWidget {
               return ListTile(
                 leading: CircleAvatar(backgroundImage: NetworkImage(emp.photo)),
                 title: Text(emp.name),
-                //subtitle: Text(emp.company),
                 onTap: () => Get.to(() => OutsourceDetailView(id: emp.id)),
               );
               

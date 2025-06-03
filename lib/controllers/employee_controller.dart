@@ -4,8 +4,6 @@ import '../models/employee.dart';
 
 class EmployeeController extends GetxController {
   var employeeList = <Employee>[].obs;
-  //var employee = <Employee>[].obs;
-
   final _uuid = Uuid();
 
   @override
